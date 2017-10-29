@@ -20,20 +20,12 @@ class Member extends CI_Model{
         
         if(array_key_exists("member_id",$params)){
             $this->db->where('member_id',$params['member_id']);
-            $this->db->order_by("campus","asc");
-            $this->db->order_by("last_name","asc");
             $query = $this->db->get();
             $result = $query->row_array();
         }else{
             
             //set start and limit
-            if(array_key_exists("start",$params) && array_key_exists("limit",$params)){
-                $this->db->limit($params['limit'],$params['start']);
-            }elseif(!array_key_exists("start",$params) && array_key_exists("limit",$params)){
-                $this->db->limit($params['limit']);
-            }
-            $this->db->order_by("campus","asc");
-            $this->db->order_by("last_name","asc");
+            
             $query = $this->db->get();
             if(array_key_exists("returnType",$params) && $params['returnType'] == 'count'){
                 $result = $query->num_rows();

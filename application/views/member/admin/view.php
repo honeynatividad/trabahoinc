@@ -14,32 +14,11 @@
         <div class="row">
             <div class="col-lg-12">
                 <section class="panel">
-                   
-                    <header class="panel-heading tab-bg-primary">
-                        <ul class="nav nav-tabs">
-                            <li  class="active">
-                                <a data-toggle="tab" href="#home-2">
-                                    Profile
-                                </a>
-                            </li>
-                            <li>
-                                <a data-toggle="tab" href="#about-2">
-                                    
-                                    Victory Group Profile
-                                </a>
-                            </li>
-                            
-                        </ul>
-                    </header>
+                   <h1>Personal Information</h1>
+                    
                     <div class="panel-body">
                         <div class="tab-content">
-                            <div id="home-2" class="tab-pane  active">
-                                <a href="<?php echo base_url('members/edit/'.$member_id) ?>" class="btn btn-success">
-                                  EDIT
-                                </a>
-                                <a href="<?php echo base_url('members/add/') ?>" class="btn btn-success">
-                                  ADD 
-                                </a>
+                            <div id="home-2" class="tab-pane  active">                                
                                 
                                 <table class="table">
                                     
@@ -58,6 +37,22 @@
                                             <td><b><?php echo $members['last_name'] ?></b></td>
                                         </tr>
                                         <tr>
+                                            <td>Nick Name</td>
+                                            <td><b><?php echo $members['nick_name'] ?></b></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Facebook Name</td>
+                                            <td><b><?php echo $members['facebook_name'] ?></b></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Instagram Name</td>
+                                            <td><b><?php echo $members['instagram_name'] ?></b></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Youtube Name</td>
+                                            <td><b><?php echo $members['youtube_name'] ?></b></td>
+                                        </tr>
+                                        <tr>
                                             <td>Contact Number</td>
                                             <td><b><?php echo $members['contact_number'] ?></b></td>
                                         </tr>
@@ -70,301 +65,73 @@
                                             <td><b><?php echo $members['email_address'] ?></b></td>
                                         </tr>
                                         <tr>
-                                            <td>Facebook Name</td>
-                                            <td><b><?php echo $members['facebook_name'] ?></b></td>
+                                            <td>Gender</td>
+                                            <td><b><?php echo $members['gender'] ?></b></td>
                                         </tr>
                                         <tr>
-                                            <td>Complete Home Address</td>
-                                            <td><b><?php echo $members['complete_home_address'] ?></b></td>
+                                            <td>Nationality</td>
+                                            <td><b><?php echo $members['nationality'] ?></b></td>
+                                        </tr>
+                                        
+                                        
+                                    </tbody>
+                                </table>
+                                <h1>Education</h1>
+                                <table class="table">
+                                    
+                                    <tbody>
+                                       
+                                        <tr>
+                                            <td>Elementary</td>
+                                            <td><b><?php echo $members['elementary'] ?></b></td>
                                         </tr>
                                         <tr>
-                                            <td>Campus</td>
-                                            <td><b><?php echo $members['campus'] ?></b></td>
+                                            <td>High School</td>
+                                            <td><b><?php echo $members['highschool'] ?></b></td>
                                         </tr>
                                         <tr>
-                                            <td>Area</td>
-                                            <td><b><?php echo $members['area'] ?></b></td>
+                                            <td>College</td>
+                                            <td><b><?php echo $members['college'] ?></b></td>
                                         </tr>
                                         <tr>
-                                            <td>Year Level</td>
-                                            <td><b><?php echo $members['year_level'] ?></b></td>
+                                            <td>Vocational</td>
+                                            <td><b><?php echo $members['vocational'] ?></b></td>
                                         </tr>
                                         <tr>
-                                            <td>Graduating</td>
-                                            <td><b><?php echo $members['graduating'] ?></b></td>
+                                            <td>Post Graduate</td>
+                                            <td><b><?php echo $members['post_graduate'] ?></b></td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                                <h1>Work Experience</h1>
+                                <table class="table">
+                                    
+                                    <tbody>                                       
+                                        <tr>
+                                            <td>Company Name</td>
+                                            <td><b><?php echo $members['company_name'] ?></b></td>
                                         </tr>
                                         <tr>
-                                            <td>Youth Services You Attend</td>
-                                            <td><b><?php echo $members['youth_services_you_attend'] ?></b></td>
+                                            <td>Location</td>
+                                            <td><b><?php echo $members['location'] ?></b></td>
                                         </tr>
                                         <tr>
-                                            <td>Ministry Involvement</td>
-                                            <td><b><?php echo $members['ministry_involvement'] ?></b></td>
+                                            <td>Length of stay</td>
+                                            <td><b><?php echo $members['length_of_stay'] ?></b></td>
                                         </tr>
                                         <tr>
-                                            <td>Name of your leadership group</td>
-                                            <td><b><?php echo $members['name_of_your_leadership_group'] ?></b></td>
+                                            <td>Position</td>
+                                            <td><b><?php echo $members['position'] ?></b></td>
                                         </tr>
                                         <tr>
-                                            <td>One 2 One</td>
-                                            <td><b><?php echo $members['one_2_one'] ?></b></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Victory Weekend</td>
-                                            <td><b><?php echo $members['victory_weekend'] ?></b></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Making Disciples</td>
-                                            <td><b><?php echo $members['making_disciples'] ?></b></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Church Community</td>
-                                            <td><b><?php echo $members['church_community'] ?></b></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Foundation Class</td>
-                                            <td><b><?php echo $members['foundation_class'] ?></b></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Empowering Leaders</td>
-                                            <td><b><?php echo $members['empowering_leaders'] ?></b></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Leadership 113</td>
-                                            <td><b><?php echo $members['leadership_113'] ?></b></td>
-                                        </tr>
-                                        <tr>
-                                            <td>How many victory groups you are leading</td>
-                                            <td><b><?php echo $members['how_many_victory_groups_you_are_leading'] ?></b></td>
+                                            <td>Skills</td>
+                                            <td><b><?php echo $members['skills'] ?></b></td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
-                            <div id="about-2" class="tab-pane">
-                                <?php if($victory_groups): ?>
-                                
-                                <?php foreach($victory_groups as $victory_group): ?>
-                                <div class="col-lg-10">
-                                    <table class="table">
-                                        <a class="btn btn-info" data-toggle="modal" href="<?php echo base_url('victory_groups/edit/'.$victory_group->victory_group_id) ?>">
-                                        Edit
-                                        </a>
-                                        <a class="btn btn-success" href="<?php echo base_url('victory_groups/add/'.$member_id) ?>">
-                                        ADD Victory Group
-                                        </a>
-                                        <a class="btn btn-warning" href="<?php echo base_url('victory_groups/delete/'.$victory_group->victory_group_id) ?>">
-                                        DELETE Victory Group
-                                        </a>
-                                        <h3>Victory Group Information</h3>
-                                        
-                                        <tbody>
-                                            <tr>
-                                                <td>Campus</td>
-                                                <td><?php echo $victory_group->campus ?></td>
-                                            </tr>
-                                            <tr>
-                                                <td>When did you jumpstart your Victory Group?</td>
-                                                <td><?php echo $victory_group->when_jumpstart ?></td>
-                                            </tr>
-                                            <tr>
-                                                <td>How many times did you meet for the past 3 months?</td>
-                                                <td><?php echo $victory_group->how_many_times ?></td>
-                                            </tr>
-                                            <tr>
-                                                <td>How many members were connected from Outreach Month</td>
-                                                <td><?php echo $victory_group->member_from_outreach ?></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Demographics</td>
-                                                <td><?php echo $victory_group->demographic ?></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Number of Victory Group Members</td>
-                                                <td><?php echo $victory_group->number_of_victory_group_member ?></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Schedule</td>
-                                                <td><?php echo $victory_group->schedule ?></td>
-                                            </tr>
-                                            <tr>
-                                                <td><b>Victory Group Members Discipleship Journey</b></td>
-                                            </tr>
-                                            <tr>
-                                                <td>One 2 One</td>
-                                                <td><?php echo $victory_group->one_2_one ?></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Victory Weekend</td>
-                                                <td><?php echo $victory_group->victory_weekend ?></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Water Baptism</td>
-                                                <td><?php echo $victory_group->water_baptism ?></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Making Disciples</td>
-                                                <td><?php echo $victory_group->making_disciples ?></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Church Community</td>
-                                                <td><?php echo $victory_group->church_community ?></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Foundation Class</td>
-                                                <td><?php echo $victory_group->foundation_class ?></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Empowering Leaders</td>
-                                                <td><?php echo $victory_group->empowering_leaders ?></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Leadership 113</td>
-                                                <td><?php echo $victory_group->leadership_113 ?></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="col-lg-10">
-                                    <?php if($interns): ?>
-                                    <?php foreach($interns as $intern): ?>
-                                    <?php if($intern->victory_group_id==$victory_group->victory_group_id): ?>
-                                    <a href="<?php echo base_url('interns/edit/'.$intern->intern_id) ?>" class="btn btn-success">
-                                        EDIT
-                                    </a>
-                                    <h3>Intern Profile</h3>
-                                    <table class="table-inbox border-content">
-                                        <tbody>
-                                            <tr>
-                                                <td>Intern Name</td>
-                                                <td><?php echo $intern->intern_name ?></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Contact Number</td>
-                                                <td><?php echo $intern->contact_number ?></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Campus</td>
-                                                <td><?php echo $intern->campus ?></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Year Level</td>
-                                                <td><?php echo $intern->year_level ?></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Graduating</td>
-                                                <td><?php echo $intern->graduating ?></td>
-                                            </tr>
-                                            <tr>
-                                                <td>One 2 One</td>
-                                                <td>
-                                                    <?php 
-                                                    if($intern->one_2_one==1){
-                                                        echo 'Yes';
-                                                    }else{
-                                                        echo 'No';
-                                                    }
-                                                    ?>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Victory Weekend</td>
-                                                <td>
-                                                    <?php 
-                                                    if($intern->victory_weekend==1){
-                                                        echo 'Yes';
-                                                    }else{
-                                                        echo 'No';
-                                                    }?>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Water Baptism</td>
-                                                <td>
-                                                    <?php 
-                                                    if($intern->water_baptism==1){
-                                                        echo 'Yes';
-                                                    }else{
-                                                        echo 'No';
-                                                    }                                                    
-                                                    ?>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Making Disciples</td>
-                                                <td>
-                                                    <?php
-                                                    if($intern->making_disciples==1){
-                                                        echo 'Yes';
-                                                    }else{
-                                                        echo 'No';
-                                                    } ?>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Church Community</td>
-                                                <td>
-                                                    <?php
-                                                    if($intern->church_community==1){
-                                                        echo 'Yes';
-                                                    }else{
-                                                        echo 'No';
-                                                    } ?>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Foundation Class</td>
-                                                <td>
-                                                    <?php
-                                                    if($intern->foundation_class==1){
-                                                        echo 'Yes';
-                                                    }else{
-                                                        echo 'No';
-                                                    }
-                                                     ?>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Empowering Leaders</td>
-                                                <td>
-                                                    <?php 
-                                                    if($intern->empowering_leaders==1){
-                                                        echo 'Yes';
-                                                    }else{
-                                                        echo 'No';
-                                                    }
-                                                    ?>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Leadership 113</td>
-                                                <td>
-                                                    <?php
-                                                    if($intern->leadership_113==1){
-                                                        echo 'Yes';
-                                                    }else{
-                                                        echo 'No';
-                                                    } ?>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <?php endif; ?>
-                                    <?php endforeach; ?>
-                                    <?php else: ?>
-                                    <h3>Intern Profile</h3>
-                                    <a class="btn btn-warning" href="<?php echo base_url('interns/add/'.$member_id.'/'.$victory_group->victory_group_id) ?>">
-                                     ADD Intern
-                                    </a>
-                                    <?php endif; ?>    
-                                </div>
-                                
-                                <?php endforeach; ?>
-                                <?php else: ?>
-                                <a class="btn btn-warning" href="<?php echo base_url('victory_groups/add/'.$member_id) ?>">
-                                        ADD Victory Group
-                                        </a>
-                                <?php endif; ?>
-                            </div>
+                            
                            
                         </div>
                      </div>
